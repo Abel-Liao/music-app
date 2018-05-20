@@ -13,7 +13,77 @@ h6
     margin: 0;
     padding: 0;
 }
+body{ 
+    font-size: 12px;
+    color: #fff;
+    background: #0C1027;
+}
 ul,li{ list-style: none;}
 .list-top{
-    background: url("../")
+    background: url("../../ass/images/musicList/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 482px;
+    width: 100%;
+    position: relative;
+}
+.list-srarch{ position: relative;}
+.list-srarch input{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    color: #ddd;
+    background: none;
+    outline: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+::placeholder{
+    color: #999;
+}
+.list-srarch i{
+    position: absolute;
+    top: 11px;
+    left: 5%;
+}
+.list-top h2{
+    position: absolute;
+    bottom: 10px;
+    padding-left: 20px;
+}
+.music-list{ padding: 0 20px;}
+.music-list li{
+    height: 50px;
+    margin-bottom: 25px;
+}
+.music-list img{
+    width: 50px;
+    height: 50px;
+}
+.pic-span{ 
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.music-list li b{
+    float: right;
+}
+.music-information{
+    display: inline-block;
+    width: 60%;
+    font-size: 1.1rem;
+    position: relative;
+    top: -7px;
+}
+.music-information span{
+    display: inline-block;
+    width: 100%;
+}
+span.small-size{ font-size: 0.9rem;}
+.music-list li b{
+    position: relative;
+    top: 16.5px;
 }
