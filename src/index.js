@@ -9,6 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducer'
 import './config'
 import App from './app'
+import MusicPlayer from './container/musicPlayer/musicPlayer'
 
 registerServiceWorker()
 
