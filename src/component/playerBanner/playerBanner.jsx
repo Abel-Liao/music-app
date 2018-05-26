@@ -1,5 +1,4 @@
 import React from 'react'
-import IconFun from '../iconFun/iconFun'
 function PlayerBanner(props){
     return (
         <div className="player-banner">

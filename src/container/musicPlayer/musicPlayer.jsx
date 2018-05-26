@@ -11,7 +11,7 @@ class MusicPlayer extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            play: true,
+            play: false,
             down: true
         };
         this.handleClickPlay = this.handleClickPlay.bind(this);
@@ -19,7 +19,12 @@ class MusicPlayer extends React.Component {
         this.handleClickReturn = this.handleClickReturn.bind(this);
     }
     handleClickPlay() {
-        this.setState({play:!this.state.play})
+        this.setState({play:!this.state.play});
+        if(this.state.play){
+            this.refs.palyerMusic.play();
+        }else{
+            this.refs.palyerMusic.pause();
+        }
     }
     handleClickDown(){
         this.setState({down:!this.state.down})
@@ -43,6 +48,11 @@ class MusicPlayer extends React.Component {
                 </div>
                 <div className="player-content">
                     <PlayerInfo songName={songName} />
+                    <audio 
+                        src={require(`../../ass/music/${songName}.mp3`)} 
+                        autoPlay
+                        ref="palyerMusic"
+                    />
                     <PlayerAudio 
                         handleClickPlay={this.handleClickPlay}
                         play={this.state.play}

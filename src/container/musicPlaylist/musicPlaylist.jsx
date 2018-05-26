@@ -1,8 +1,9 @@
 import React from 'react'
 
 import "./musicPlaylist.css"
-import MusicList from '../../component/musicList/musicList'
+
 import MusicSearch from '../../component/musicSearch/musicSearch'
+import MusicList from '../../component/musicList/musicList'
 class MusicPlaylist extends React.Component {
     constructor(props){
         super(props);

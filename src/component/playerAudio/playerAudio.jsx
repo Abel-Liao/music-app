@@ -4,7 +4,7 @@ function PlayerAudio(props){
     return (
         <div className="player-playStop">
             <i className="iconfont icon-ai-rew-left" />
-            <span className="play-stop" onClick={props.handleClickPlay}>
+            <span className="play-stop" onClick={()=>props.handleClickPlay(true)}>
                 <IconFun 
                     spanClass={null}
                     handleClickIcon={props.handleClickPlay}
