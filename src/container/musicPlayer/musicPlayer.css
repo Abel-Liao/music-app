@@ -4,9 +4,16 @@
     margin-top: 10px;
 }
 .player-title{ position: relative;}
-.player-down{ 
+.player-return{
     position: absolute;
     left: 10px;
+    top: 3px;
+    transform: rotate(90deg);
+}
+.player-return i{ font-size: 32px;}
+.player-down{ 
+    position: absolute;
+    right: 10px;
     top: 7px;
     width: 25px;
     height: 25px;
@@ -18,7 +25,7 @@
 .player-down.click{ transform: rotate(180deg);}
 .player-top h4,.player-content h4{ 
     font-size: 1.1rem;
-    width: 90%;
+    width: 60%;
     height: 24px;
     margin: 0 auto;
     overflow: hidden;

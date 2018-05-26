@@ -13,7 +13,7 @@ class MusicPlaylist extends React.Component {
     }
     handleClickPlay(name){
         this.setState({songName:name});
-        this.props.history.push(`/music?musicname=${name}`)
+        this.props.history.push(`/music?name=${name}`)
     }
     render() {
         const list = [
