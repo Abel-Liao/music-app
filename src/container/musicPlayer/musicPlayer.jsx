@@ -49,7 +49,8 @@ class MusicPlayer extends React.Component {
                 <div className="player-content">
                     <PlayerInfo songName={songName} />
                     <audio 
-                        src={require(`../../ass/music/${songName}.mp3`)} 
+                        // src={require(`../../ass/music/${songName}.mp3`)} 
+                        src={require(`../../ass/music/十年.mp3`)} 
                         autoPlay
                         ref="palyerMusic"
                     />
